@@ -62,6 +62,82 @@ body { overflow: hidden; background-color:white; height:100vh; width:100vw;
 .se-main-container { height:100%; overflow:auto; scrollbar-width: none; -ms-overflow-style: none; }
 .se-main-container { padding: 0vw 7vw 0vw 7vw ; margin-top: 9vw; margin-bottom: 3vw; height: calc(100% - 13vw); }
 
+/*---------------------------------------------------
+---------------------FONTS---------------------------
+---------------------------------------------------*/
+@font-face {
+    font-family: 'PTSansPro';
+    src: url('/wp-content/themes/SimplEvent-SEF/fonts/PTSansPro-Light.eot'); /* IE9 Compat Modes */
+    src: url('/wp-content/themes/SimplEvent-SEF/fonts/PTSansPro-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/wp-content/themes/SimplEvent-SEF/fonts/PTSansPro-Light.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/wp-content/themes/SimplEvent-SEF/fonts/PTSansPro-Light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/wp-content/themes/SimplEvent-SEF/fonts/PTSansPro-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('/wp-content/themes/SimplEvent-SEF/fonts/PT_Sans_Pro-Extra_Light.otf')  format('opentype')
+}
+@font-face {
+    font-family: 'PTSansPro';
+    font-weight: bold;
+    src: url('/wp-content/themes/SimplEvent-SEF/fonts/PTSansPro-ExtraBold.eot'); /* IE9 Compat Modes */
+    src: url('/wp-content/themes/SimplEvent-SEF/fonts/PTSansPro-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/wp-content/themes/SimplEvent-SEF/fonts/PTSansPro-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/wp-content/themes/SimplEvent-SEF/fonts/PTSansPro-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/wp-content/themes/SimplEvent-SEF/fonts/PTSansPro-ExtraBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('/wp-content/themes/SimplEvent-SEF/fonts/PT_Sans_Pro-Extra_Bold.otf')  format('opentype')
+}
+/*
+body, pre { font-family: 'PTSansPro', Fallback, sans-serif; font-size: 16px; }
+*/
+p, pre, ul, li { line-height: 1.5; font-size: 1em; margin-bottom:1em; }
+a { text-decoration:none; color:inherit; }
+h1 { font-size:5em; font-weight: bold; line-height:1; text-transform: uppercase; }
+h2 { font-size:2em; font-weight: bold; line-height: normal; text-transform: uppercase;}
+h3 { font-size:1.5em; font-weight: bold; text-transform: uppercase; }
+h4 { font-size:1.125em; line-height: 1.33; font-weight: 300; }
+h5 { font-size:1.125em; font-weight: 300; }
+h6 { font-weight: 300; }
+
+h1, h2, h3, p {-webkit-hyphens: auto;
+ -moz-hyphens: auto;
+ -ms-hyphens: auto;
+ hyphens: auto;}
+
+ul, .se-downloader { list-style-position: outside; list-style-type: none; padding-left: 20px; padding-top: .6em; margin-bottom:.5em; }
+ul li, .se-downloader p { /*border-left: 2px solid rgba( 255,255,255,0.4); background-color:rgba( 255,255,255,0.05); border-left: 2px solid rgba( 51,51,51,0.4); */ padding:5px 30px; margin:10px -20px !important; border-spacing: 200px;
+ -webkit-backdrop-filter: blur(21px);
+ backdrop-filter: blur(21px);
+ box-shadow: inset 0px 1px 1px 0 #fff;
+ background-image: linear-gradient(169deg, rgba(255, 255, 255, 0.2) 39%, rgba(240, 240, 240, 0.4) 94%);}
+
+/*Download*/
+.se-downloader { cursor: pointer; position: relative; width:fit-content; min-width:400px;}
+.se-download-layer { opacity:0; position: absolute; z-index:10; width: calc(100% + 20px); height:calc( 100% - 15px ); background-color:rgba( 255,255,255,1); top:0; left:0; margin-top:15px; }
+.se-download-layer h3 { text-align: center; padding-top:6px; }
+.se-download-layer img { height:50%; position: absolute; right:20px; top:0; bottom:0; margin: auto; }
+
+table { border-collapse: collapse; margin-bottom:20px; }
+tr { margin:5px 0; }
+.se-table-dark tr { background-color: rgba( 255,255,255,0.05); border-bottom:2px solid rgba( 255,255,255,0.8); }
+.se-table-light tr { background-color: rgba( 0,0,0,0.05); border-bottom:1px solid rgba( 0,0,0,0.1); }
+td { padding:10px 10px; margin-bottom:5px; }
+
+
+.se-table-pricing td { padding:10px 10px !important; font-size: 1.1em;  }
+.se-table-pricing td p {font-size: 100%;}
+.se-table-pricing-check { background-image: url('./img/tick_black.svg'); height:20px; background-repeat: no-repeat;  }
+
+
+.se-highlight { display:inline; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+
+@media only screen and (max-width: 1400px){
+ html { font-size:100%; }
+}
+@media only screen and (max-width: 1200px){
+ html { font-size:90%; }
+}
+@media only screen and (max-width: 900px){
+ html { font-size:80%; }
+}
+
 
 /*--LAYOUT--*/
 /*.se-strip { overflow: hidden; height:100%;}*/
