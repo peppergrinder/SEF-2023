@@ -1,8 +1,8 @@
 body {
     background-image: url("../images/bgd_1080.jpg");
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 1920px;
-    height: 1080px;
+    width: 1920px; /*useless*/
+    height: 1080px; /*useless*/
 }
 
 p {

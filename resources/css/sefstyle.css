@@ -1,0 +1,216 @@
+  /*--------------------------Allgemein--------------------------*/
+/*Clearfix*/
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.image-settings {
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* .image-settings:hover {
+  transition: all 1s;
+  background-size:160%;
+} */
+
+* { margin: 0; padding: 0; }
+*, *:before, *:after { box-sizing: border-box; }
+
+html{
+    -webkit-hyphens: auto;
+     -ms-hyphens: auto;
+     hyphens: auto;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: 'PTSansPro','Open Sans', sans-serif;
+  vertical-align: baseline;
+}
+
+b, strong { font-weight: bold !important; }
+i, em { font-style:italic; }
+
+sup { line-height: 0; }
+body { overflow: hidden; background-color:white; height:100vh; width:100vw;
+  background: #343434; /* Old browsers */
+  background: -moz-radial-gradient(65% -5%, ellipse cover,  #1f1f1f 0%, #0f0f0f 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(65% -5%, ellipse cover,  #1f1f1f 0%,#0f0f0f 100%); /* Chrome10-25, Safari5.1-6 */
+  background: radial-gradient(ellipse at 65% -5%,  #1f1f1f 0%,#0f0f0f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#0f0f0f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.se-main-container { height:100%; overflow:auto; scrollbar-width: none; -ms-overflow-style: none; }
+.se-main-container { padding: 0vw 7vw 0vw 7vw ; margin-top: 9vw; margin-bottom: 3vw; height: calc(100% - 13vw); }
+
+
+/*--LAYOUT--*/
+/*.se-strip { overflow: hidden; height:100%;}*/
+.se-strip__inner {
+    margin: 100px 0 20px 20px;
+  }
+  .se-content { width:100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-items: stretch; }
+  /*.se-content, .se-strip  { overflow-y:scroll; overflow-x: hidden; scrollbar-width: none; -ms-overflow-style: none;  }*/
+  .se-content::-webkit-scrollbar, .se-strip::-webkit-scrollbar { display:none; }
+  
+  
+  .se-col-1 { width: 8.33%;  }
+  .se-col-2 { width: 16.66%; }
+  .se-col-3 { width: 25%; }
+  .se-col-4 { width: 33.33%; }
+  .se-col-5 { width: 41.66%; }
+  .se-col-6 { width: 50%;}
+  .se-col-7 { width: 58.33%;  }
+  .se-col-8 { width: 66.66%;  }
+  .se-col-9 { width: 75%; }
+  .se-col-10 { width: 83.33%; }
+  .se-col-11 { width: 91.66%; }
+  .se-col-12 { width: 100%; }
+  .se-col-1, .se-col-2, .se-col-3, .se-col-4, .se-col-5, .se-col-6,
+  .se-col-7, .se-col-8, .se-col-9, .se-col-10, .se-col-11, .se-col-12 {
+    padding:0;
+  }
+  
+  
+  /*blur Effect*/
+  .bg-bluring, .bg-bluring-dark { backdrop-filter: blur(4px); border-bottom:1px black solid; }
+  .bg-bluring-dark { background-color: rgba( 0,0,0,0.6); }
+  
+  /*hide scrollbar*/
+  .hide-scroll { overflow-y:scroll; overflow-x: hidden; scrollbar-width: none; -ms-overflow-style: none;  }
+  .hide-scroll::-webkit-scrollbar { display:none; }
+    
+/*-------------------------------------------------------------
+---------------------------HOME-------------------------------
+--------------------------------------------------------------*/
+.se-home-img {  background-repeat: no-repeat; position:fixed; top:0; left:0; width:100%; height:100%; background-size: cover;}
+.se-home-title-banner { position:relative; top:0; bottom:0; margin:auto; left:0; padding:30px 10vw; }
+/*.se-home-title-banner { width:100vw; position:fixed; top:0; bottom:0; margin:auto; left:0; padding:30px 10vw; height:60vh;}*/
+.sef-home-banner-content { width:50%; float:right; margin-top:8vh; padding-left:20px; }
+.sef-home-banner-content p { max-height: 20vh; overflow-y: scroll; }
+.sef-home-banner-content-text { float: right; width:50%; text-align: right;padding-right:20px; margin-top:7vh; overflow-y: scroll; max-height:50vh;}
+
+/*-------------------------------------------------------------
+-----------------------------PROGRAMM--------------------------
+--------------------------------------------------------------*/
+.se-programm-schedule-container { width:100%; display: flex; flex-direction: row; flex-wrap:wrap; position: relative; align-items: stretch; }
+.se-programm-schedule-container div { margin-bottom:25px; }
+.se-programm-schedule-cell-l { margin-right: 25px; padding-right: 25px; border-right: #505050 2px solid; width:150px; }
+/*.se-programm-schedule-cell-r {  }*/
+.referenten { cursor: pointer;  }
+.referenten .se-programm-schedule-cell-r { width: calc(100% - 200px); }
+.programm-arrow { position: absolute; right:10px; top:10px; opacity: 0; }
+.titelzeile h5 { color:#fff; }
+/*programm - Speaker */
+.se-programm-speaker-hidden { display: flex; flex-direction: row; flex-wrap:wrap; max-width: 100%; }
+.se-programm-speaker-image { width:30%; height:200px; background-size: cover; background-repeat: no-repeat; background-position-x: 20%; }
+.se-programm-speaker-text { width:70%; }
+.se-programm-speaker-subtitle { text-transform: uppercase; margin-bottom:0 !important; }
+
+/* Background Layouts */
+
+.bg-layout.layout1 {
+    background-image: url(https://www.swisseconomic.ch/wp-content/themes/SimplEvent-SEF/img/sef23/bgDesign-1.png);
+  }
+  
+  .bg-layout.layout2 {
+    background-image: url(https://www.swisseconomic.ch/wp-content/themes/SimplEvent-SEF/img/sef23/bgDesign-2.png);
+    background-position: center;
+  }
+  
+  .bg-layout.layout3 {
+    background-image: url(https://www.swisseconomic.ch/wp-content/themes/SimplEvent-SEF/img/sef23/gradient-big.png);
+  }
+  
+  .bg-layout.layout4 {
+    background-image: url(https://www.swisseconomic.ch/wp-content/themes/SimplEvent-SEF/img/sef23/bgDesign-4.png);
+    background-position: center;
+  }
+  
+  .bg-layout.layout6 {
+    background-image: url(https://www.swisseconomic.ch/wp-content/themes/SimplEvent-SEF/img/sef23/gradient-small.png);
+  }
+  
+  
+  .bg-layout.layout3.layout3-left  {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    left: -2.5vw;
+    top: 0;
+  }
+  
+  .bg-layout.layout3.layout3-right  {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    right: -2.5vw;
+    top: 0;
+    left: unset;
+  }
+  
+  .bg-layout.layout6  {
+    height: calc(100vh - 180px);
+    position: fixed;
+    left: 0;
+    top: 128px;
+    background-size: cover;
+    width: 33.3vw;
+  }
+  
+  @media only screen and (max-width: 768px){
+    .bg-layout {
+        top: calc(4vh + 50px) !important;
+        height: calc(96vh - 50px) !important;
+    }
+    .bg-layout.layout3,
+    .bg-layout.layout6 {
+        background-image: url(https://www.swisseconomic.ch/wp-content/themes/SimplEvent-SEF/img/sef23/gradient-full.svg) !important;
+    }
+    .bg-layout.layout1 {
+       background-image:url(https://www.swisseconomic.ch/wp-content/themes/SimplEvent-SEF/img/sef23/snake-1.svg), url(https://www.swisseconomic.ch/wp-content/themes/SimplEvent-SEF/img/sef23/gradient-full.svg)  !important;
+       background-size: 100%, cover;
+       background-position: 0 -15px, center;
+    }
+    .bg-layout.layout2 {
+        background-image:url(https://www.swisseconomic.ch/wp-content/themes/SimplEvent-SEF/img/sef23/snake-2.svg), url(https://www.swisseconomic.ch/wp-content/themes/SimplEvent-SEF/img/sef23/gradient-full.svg)  !important;
+     }
+     .bg-layout.layout4 {
+        background-image:url(https://www.swisseconomic.ch/wp-content/themes/SimplEvent-SEF/img/sef23/snake-3.svg), url(https://www.swisseconomic.ch/wp-content/themes/SimplEvent-SEF/img/sef23/gradient-full.svg)  !important;
+        background-size: 100%, cover;
+     }
+     .bg-layout.layout6 {
+        background-image: none !important;
+     }
+  
+     .bg-layout.layout3.layout3-left  {
+        width: 100%;
+        left: 0;
+        position: fixed;
+     }
+  
+     .bg-layout.layout3.layout3-right  {
+        width: 100%;
+        right: 0;
+        position: fixed;
+     }
+  }
