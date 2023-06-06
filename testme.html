@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testme</title>
+</head>
+<style>
+    .main-container { 
+    height: 1080px;
+    background-image: url(/resources/images/bgDesign-2-HD.png);
+    background-repeat: no-repeat;
+}
+
+.header { position: absolute; background: red; height: 250px; width: 1920px; z-index: 10;}
+.left { float: left; background: greenyellow; width: 20%; height: 840px; padding: 0px; }
+.center { float: left; padding-left: 20px; width: 70%; }
+.right { float: left; width: 50px; height: 400px ; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#slide-name {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    top: 100px;
+    left: 100px;
+    z-index: 11;
+}
+
+</style>
+<body>
+    <div class="header"></div>
+    <!--MAIN CONTAINER-->
+    <div class="main-container">
+            <div id="slide-name">
+                <h1>Programm</h1>
+                <h1 style="font-weight:200;">2023</h1>
+            </div>
+
+        <div class="left"></div>
+        <div class="center">
+</body>
+</html>
