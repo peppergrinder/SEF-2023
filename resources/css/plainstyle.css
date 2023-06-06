@@ -105,11 +105,11 @@ ul li p { /*border-left: 2px solid rgba( 255,255,255,0.4); background-color:rgba
 
 .main-container { 
     height: 1080px;
-    background-image: url(/resources/images/bgDesign-2-HD.png);
+    background-image: url(../images/bgDesign-2-HD.png);
     background-repeat: no-repeat;
 }
 
-.header { position: absolute; background: url(/resources/images/bgDesign-2-HD_250_01.png); background-repeat: no-repeat; height: 250px; width: 1920px; z-index: 10;}
+.header { position: absolute; background: url(../images/bgDesign-2-HD_250_01.png); background-repeat: no-repeat; height: 250px; width: 1920px; z-index: 10;}
 .left { float: left; width: 20%; height: 840px; padding: 0px; }
 .center { float: left; padding-left: 20px; width: 70%; }
 .right { float: left; width: 50px; height: 400px ; }
