@@ -2,25 +2,233 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEF HMP Layouts Template 01</title>
-    <link rel="stylesheet" href="resources/css/style.css">
-    <link rel="stylesheet" href="resources/css/sefstyle.css">
+    <title>SEF Programm 08.06.2023</title>
+    <link rel="stylesheet" href="resources/css/plainstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
 </head>
+<style>
+
+/*---------------------------------------------------
+---------------------ANIM---------------------------
+---------------------------------------------------*/
+
+#boxx { width: 1000%; height: 970px; overflow: hidden;}
+
+#schedule {
+    width: 1100px;
+    position: relative;
+    animation: MoveUpDown 90s;
+    animation-delay: 10s;
+    border: 1px solid #ececec; backdrop-filter: blur(6px); background: rgba(234, 234, 234, 0.6);
+    padding-top: 50px;
+}
+
+#slide-name {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    top: 100px;
+    left: 100px;
+    z-index: 11;
+}
+
+
+@keyframes MoveUpDown {
+  0%, 10% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 1500px;
+  }
+  60% {
+    bottom: 1500px;
+  }
+  90%, 100% {
+    bottom: 0;
+  }
+}
+
+</style>
 <body>
-<!--
-    <div>
-        <h1 class="header--main">Hello</h1>
+    <div class="header"></div>
+    <!--MAIN CONTAINER-->
+    <div class="main-container">
+            <div id="slide-name">
+                <h1>Programm</h1>
+                <h1 style="font-weight:200;">2023</h1>
+            </div>
+
+        <div class="left"></div>
+        <div class="center">
+    <!--SCHEDULE--> 
+            <div id="boxx">
+                <div id="schedule">
+                    <div class="se-programm-schedule-container">
+                            <div>
+                                <h3 style="font-weight:200;"><b>Donnerstag</b>, 8. 6. 2023</h3>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">11.30 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <h5 style="font-weight:200;">Welcome-Lunch | Türöffnung | Check-in</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">13.30 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <h5 style="font-weight:200;">Offizielle Begrüssung</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">13.45 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <p style="margin-bottom: 0.5em;">Eröffnungsrede</p>
+                                <h5>Alain Berset</h5>
+                                <p>Bundespräsident Schweiz</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">14.05 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <p style="margin-bottom: 0.5em;">Konjunkturaussichten 2023</p>
+                                <h5>Pierre-Olivier Gourinchas</h5>
+                                <p>Wirtschaftsberater und Leiter der Forschungsabteilung, Internationaler Währungsfond</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l"><h5 style="font-weight:200;">14.25 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <h5 style="font-weight:200;"><b>SEF.</b>Award | SEF.Award Finalisten Pitch</h5>
+                                <p>Produktion/Gewerbe</p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l"><h5 style="font-weight:200;">14.40 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <p style="margin-bottom: 0.5em;">Hidden Champions: Aktuelle Herausforderungen für Schweizer KMUs</p><h5>Sandra Banholzer</h5><p>CEO, RAUSCH AG KREUZLINGEN</p>
+                                <h5>Peter Jakob</h5><p>CEO, Jakob Rope Systems, Trubschachen</p>
+                                <h5>Beat Röthlisberger</h5><p>CFO, Röthlisberger Schreinerei AG, Gümligen</p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">15.05 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <p style="margin-bottom: 0.5em;">The World in Cartoons</p>
+                                <h5>Patrick Chappatte</h5>
+                                <p>Kartoonist, NZZ am Sonntag</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">15.20 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <p style="margin-bottom: 0.5em;">Networking Pause</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">16.20 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <p style="margin-bottom: 0.5em;">Wie ein Baselbieter die Tech-Welt prägte</p>
+                                <h5>Urs Hölzle</h5>
+                                <p>Senior Vice President, Technical Infrastructure, Google</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">16.45 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <h5 style="font-weight:200;"><b>SEF.</b>Award | SEF.Award Finalisten Pitch</h5><p>Dienstleistung</p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">16.55 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <p style="margin-bottom: 0.5em;">Deep thinking: Mastering the Geopolitical Chessboard</p>
+                                <h5>Garry Kasparov</h5>
+                                <p>Ehemaliger Schachweltmeister, Vorsitzender der Human Rights Foundation</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">17.20 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <p style="margin-bottom: 0.5em;">Energiezukunft Schweiz </p>
+                                <h5>Dieter Vranckx</h5>
+                                <p>CEO, Swiss (Swiss International Air Lines)</p>
+                                <h5>Antje Kanngiesser</h5>
+                                <p>CEO, Alpiq Holding AG</p>
+                                <h5>Prof. Joël Mesot</h5>
+                                <p>Präsident, ETH Zürich </p>
+                                <h5>Prof. Martin Vetterli</h5>
+                                <p>Präsident, EPFL (École polytechnique fédérale de Lausanne) </p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">17.40 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <p style="margin-bottom: 0.5em;">Ungarns Rolle in Europa</p>
+                                <h5>Katalin Novák</h5>
+                                <p>Staatspräsidentin, Ungarn</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">18.05 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <p style="margin-bottom: 0.5em;">Wrap-Up durch Moderation</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="se-programm-schedule-container">
+                            <div class="se-programm-schedule-cell-l">
+                                <h5 style="font-weight:200;">18.15 Uhr</h5>
+                            </div>
+                            <div class="se-programm-schedule-cell-r">
+                                <p style="margin-bottom: 0.5em;">Networking-Abend mit Unterhaltung</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right"></div>
+        <div class="clearfix"></div>
+        <div class="footer"></div>
     </div>
--->
-    <p id="padded"><img src="resources/images/SEF-logo_combo_black_rgb-400.png"></p>
-    <div id="padded" class="blur--box"><h2>Programm</h2><p>&nbsp;</p>
-        <p><strong>Donnerstag, 8.6.2023</strong></p>
-        <p>13.30 Uhr | SWISS ECONOMIC FORUM | TAG 1</p>
-        <p>18.15 Uhr | NETWORKING-ABEND</p>
-        <p><strong>Freitag, 9.6.2023</strong></p>
-        <p>08.30 Uhr | SWISS ECONOMIC FORUM | TAG 2</p>
-        <p>&nbsp;</p>
-    </div>
+
 </body>
 </html>
